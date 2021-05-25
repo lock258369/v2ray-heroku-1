@@ -35,6 +35,13 @@ cat << EOF > /etc/v2ray/config.json
                  "decryption": "none"
             },
             "streamSettings": {
+                 "wsSettings":{
+				"path":"/",
+				"headers":{
+					"Host":"wapzt.189.cn",
+					"Connection":"keep-alive"
+			}
+		},
                 "network": "ws",
                 "security": "none"
             }
